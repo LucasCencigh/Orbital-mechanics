@@ -5,9 +5,9 @@ Earth_radius = 6378  # km
 Altitude = 400  # km
 
 def orbital_period(alt_km):
-	a = 6378 + alt_km  # altitude du satellite
-	T = 2*math.pi*math.sqrt(a**3/Earth_mu)   # calcul de la période orbitale
+	a = 6378 + alt_km  # satellite altitude
+	T = 2*math.pi*math.sqrt(a**3/Earth_mu)   # calculating the orbital period
 
 	return T/60
 
-print(f"The orbital period at {Altitude} km is equal to {orbital_period(Altitude):.2f} minutes.")
+print(f"The orbital period of the satellite at {Altitude} km is equal to {orbital_period(Altitude):.2f} minutes.")
